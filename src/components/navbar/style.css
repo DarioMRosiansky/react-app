@@ -1,0 +1,36 @@
+  
+  
+ nav {
+    display: flex;
+    justify-content: space-between;
+    background-color: #ffffff;
+    color: #000000;
+    padding: 10px;
+    margin: 6vh 20vh 20vh 20vh
+    }
+
+  
+  .navbar-title {
+    font-size: 24px;
+    margin: 0;
+    padding: 0;
+  }
+  .navbar-links {
+    display: flex;
+    align-items: center;
+  }
+  .navbar-links a {
+    color: #090808;
+    text-decoration: none;
+    margin: 0 10px;
+  }
+  .login-button {
+    background-color: #470fe0;
+    color: #ffffff;
+    border: none;
+    height: 4vh; 
+    width: 8vh;
+    padding: 8px 16px;
+    border-radius: 6px;
+    cursor: pointer;
+  }
