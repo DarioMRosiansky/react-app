@@ -1,25 +1,25 @@
 
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
 import './App.css'
-import './components/navbar'
-import Navbar from './components/navbar'
+import { RouterProvider,createBrowserRouter } from 'react-router-dom'
 
+import Home from './pages/Home'
+import Cities from './pages/Cities'
+import Page404 from './pages/Page404'
 
+const router = createBrowserRouter([
+  { path: '/', element: <Home /> },
+  { path: '/cities', element: <Cities /> },
+  { path: '*' , element: <Page404/>}
+])
 
 function App() {
+
   return (
-    <Navbar /> 
-    
+    <>
+    <RouterProvider router={router}/>
+    </>
+
   )
 }
-
-/* <h1>Find the perfect destination</h1>
-
-   <p> Our app will help you find the perfect path for your next trip. With an easy-to-use 
-    interface and a host of itinerary options, planning your next trip has never been easier.</p>
-
-</Main> */ 
 
 export default App
